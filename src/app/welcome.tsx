@@ -2,10 +2,10 @@ import { Link } from "expo-router";
 import { Container, Title1 } from "./styled";
 import React from "react";
 
-export default function Tasks() {
+export default function Welcome() {
   return (
     <Container>
-      <Title1>Tarefas</Title1>
+      <Title1>Seja Bem vindo</Title1>
 
       <Link href={'/'}>Home</Link>
     </Container>
