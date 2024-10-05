@@ -1,15 +1,20 @@
-import { Link } from "expo-router";
 import {
   ActionsFooter,
+  ButtonAlert,
   CardParagraph,
   Container,
   ContainerParagraph,
   DivFooter,
+  InputAlert,
+  ModalAlert,
+  ModalTitleAlert,
   Paragraph,
   SectionImg,
   SectionTitle,
+  TextButtonAlert,
   Title1,
   Title3,
+  TitleAlert,
   TitleFooter,
   TitleParagraph,
 } from "./styled";
@@ -19,10 +24,21 @@ import {
   MessageSquareMore,
   MessagesSquare,
   TriangleAlert,
+  X,
 } from "lucide-react-native";
-import React from "react";
+import React, { useState } from "react";
+import { Modal, Text, TouchableOpacity, View } from "react-native";
 
-export default function Index() {
+export default function About() {
+  const [isModalAlert, setIsModalAlert] = useState<boolean>(false);
+  // function openModalAlert(): void {
+  //   setIsModalAlert(true)
+  // }
+
+  // function closeModalAlert(): void {
+  //   setIsModalAlert(true)
+  // }
+
   return (
     <Container>
       <SectionTitle>
@@ -74,11 +90,48 @@ export default function Index() {
           </CardParagraph>
         </ContainerParagraph>
         <ActionsFooter>
-          
           <MessageSquareMore color={"#292929"} size={40} />
-          <TriangleAlert fill="#f44336" color={"#ECECEC"} size={44} />
+          <TouchableOpacity
+            onPress={() => {
+              setIsModalAlert(true);
+            }}
+          >
+            <TriangleAlert fill="#f44336" color={"#ECECEC"} size={44} />
+          </TouchableOpacity>
         </ActionsFooter>
       </DivFooter>
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={isModalAlert}
+        onRequestClose={() => setIsModalAlert(false)} // Fechar modal ao pressionar o botão de voltar
+      >
+        <View
+          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+        >
+          <ModalAlert>
+            <ModalTitleAlert>
+              <TitleAlert>Algo para relatar?</TitleAlert>
+              <TouchableOpacity onPress={() => setIsModalAlert(false)}>
+                <X color="#ececec" size={28} />
+              </TouchableOpacity>
+            </ModalTitleAlert>
+
+            <InputAlert
+              placeholder="Digite seu alerta"
+              placeholderTextColor="#A5A5A5"
+            ></InputAlert>
+
+            <ButtonAlert
+              onPress={() => {
+                console.log("Button Alert Press");
+              }}
+            >
+              <TextButtonAlert>Enviar</TextButtonAlert>
+            </ButtonAlert>
+          </ModalAlert>
+        </View>
+      </Modal>
     </Container>
   );
 }

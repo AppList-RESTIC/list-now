@@ -10,7 +10,6 @@ export const Container = styled.View`
   position: relative;
   padding-top: 2em;
   box-sizing: border-box;
-  border: 1px solid red;
 `;
 
 export const SectionTitle = styled.View`
@@ -20,7 +19,6 @@ export const SectionTitle = styled.View`
   align-items: start;
   position: relative;
 
-  border: 1px solid green;
   padding: 0px 10px;
   width: 100%;
   height: 120px;
@@ -49,7 +47,6 @@ export const SectionImg = styled.View`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid gray;
 `;
 
 export const DivFooter = styled.View`
@@ -57,7 +54,7 @@ export const DivFooter = styled.View`
   bottom: 0;
   padding: 14px 24px;
   background-color: #ececec;
-  border: 1px solid red;
+
   width: 100%;
   border-radius: 30px 30px 0px 0px;
   height: 480;
@@ -125,7 +122,7 @@ export const ActionsFooter = styled.Text`
 // `;
 
 export const Logo = styled.Image`
-  width: 12.5rem;  /* 200px / 16 = 12.5rem */
+  width: 12.5rem; /* 200px / 16 = 12.5rem */
   height: 10.5rem; /* 200px / 16 = 12.5rem */
   margin-top: 2.375rem; /* 38px / 16 = 2.375rem */
   resize-mode: contain;
@@ -137,7 +134,6 @@ export const SetaContainer = styled.View`
   padding-left: 0.05rem; /* 20px / 16 = 1.25rem */
 `;
 
-
 export const Title2 = styled.Text`
   font-size: 28px;
   width: 90%;
@@ -145,15 +141,14 @@ export const Title2 = styled.Text`
   margin-bottom: 20px;
   color: white;
   text-align: center;
-  border: 1px solid;
 `;
 // BemVindo
 
 // Home
 export const InputContainer = styled.View`
   width: 100%;
-  margin-top: 5.5rem; 
-  margin-bottom: 8.1875rem; 
+  margin-top: 5.5rem;
+  margin-bottom: 8.1875rem;
   align-items: center;
 `;
 
@@ -161,9 +156,9 @@ export const InputCampo = styled.View`
   flex-direction: row;
   align-items: center;
   border-bottom-width: 1px;
-  border-bottom-color: #8E8E8E;
+  border-bottom-color: #8e8e8e;
   width: 80%;
-  height:52px;
+  height: 52px;
   margin-bottom: 2.25rem;
   padding: 10px 0;
 `;
@@ -174,8 +169,61 @@ export const IconContainer = styled.View`
 
 export const PularText = styled.Text`
   font-size: 22px;
-  font-weight:bold;
+  font-weight: bold;
   color: #fff;
   margin-top: 20px;
 `;
 // Home
+
+export const ModalAlert = styled.View`
+  background-color: rgba(17, 17, 17, 0.95);
+  width: 272px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.2em;
+  border-radius: 18px;
+  gap: 1.4em;
+`;
+
+export const ModalTitleAlert = styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 8px;
+`;
+
+export const TitleAlert = styled.Text`
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ececec;
+  padding-bottom: 4px;
+`;
+
+export const InputAlert = styled.TextInput`
+  width: 100%;
+  height: 34px;
+  border-radius: 6px;
+  background-color: #ececec;
+  text-indent: 0.5em;
+  outline: none;
+`;
+
+export const ButtonAlert = styled.TouchableOpacity`
+  background-color: #ee4d2d;
+  width: 106px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TextButtonAlert = styled.Text`
+  color: #ececec;
+  font-weight: 500;
+`;
