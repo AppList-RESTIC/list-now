@@ -116,3 +116,42 @@ export const ActionsFooter = styled.Text`
   align-items: center;
   justify-content: space-between;
 `;
+// BemVindo
+// export const Logo = styled.Image`
+//   width: 200px;
+//   height: 200px;
+//   margin-top: 38px;
+//   resize-mode: contain;
+// `;
+
+export const Logo = styled.Image`
+  width: 12.5rem;  /* 200px / 16 = 12.5rem */
+  height: 10.5rem; /* 200px / 16 = 12.5rem */
+  margin-top: 2.375rem; /* 38px / 16 = 2.375rem */
+  resize-mode: contain;
+`;
+
+
+// export const SetaContainer = styled.View`
+//   width: 100%;
+//   align-items: flex-start;
+//   padding-left: 20px;
+// `;
+
+
+export const SetaContainer = styled.View`
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 0.05rem; /* 20px / 16 = 1.25rem */
+`;
+
+
+export const Title = styled.Text`
+  font-size: 28px;
+  width: 90%;
+  margin-top: 46px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+`;
+// BemVindo
