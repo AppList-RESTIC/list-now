@@ -148,3 +148,34 @@ export const Title2 = styled.Text`
   border: 1px solid;
 `;
 // BemVindo
+
+// Home
+export const InputContainer = styled.View`
+  width: 100%;
+  margin-top: 5.5rem; 
+  margin-bottom: 8.1875rem; 
+  align-items: center;
+`;
+
+export const InputCampo = styled.View`
+  flex-direction: row;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-color: #8E8E8E;
+  width: 80%;
+  height:52px;
+  margin-bottom: 2.25rem;
+  padding: 10px 0;
+`;
+
+export const IconContainer = styled.View`
+  padding-left: 10px;
+`;
+
+export const PularText = styled.Text`
+  font-size: 22px;
+  font-weight:bold;
+  color: #fff;
+  margin-top: 20px;
+`;
+// Home
