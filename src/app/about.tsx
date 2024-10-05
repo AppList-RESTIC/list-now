@@ -20,6 +20,7 @@ import {
   MessagesSquare,
   TriangleAlert,
 } from "lucide-react-native";
+import React from "react";
 
 export default function Index() {
   return (

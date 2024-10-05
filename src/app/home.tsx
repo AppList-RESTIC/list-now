@@ -1,5 +1,6 @@
 import { Container, Title1 } from "./styled";
 import CustomButton from "../components/button";
+import React from "react";
 
 export default function Home() {
   return (

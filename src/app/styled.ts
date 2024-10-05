@@ -131,14 +131,6 @@ export const Logo = styled.Image`
   resize-mode: contain;
 `;
 
-
-// export const SetaContainer = styled.View`
-//   width: 100%;
-//   align-items: flex-start;
-//   padding-left: 20px;
-// `;
-
-
 export const SetaContainer = styled.View`
   width: 100%;
   align-items: flex-start;
@@ -146,12 +138,13 @@ export const SetaContainer = styled.View`
 `;
 
 
-export const Title = styled.Text`
+export const Title2 = styled.Text`
   font-size: 28px;
   width: 90%;
   margin-top: 46px;
   margin-bottom: 20px;
   color: white;
   text-align: center;
+  border: 1px solid;
 `;
 // BemVindo
