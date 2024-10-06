@@ -227,3 +227,119 @@ export const TextButtonAlert = styled.Text`
   color: #ececec;
   font-weight: 500;
 `;
+
+// Welcome
+export const BemVindoCotainer = styled.View`
+  background-color: #292929;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: start;
+  position: relative;
+  padding-top: 2em;
+  box-sizing: border-box;
+`;
+
+export const BemVindoTxt = styled.View`
+  /* margin-left:1em; */
+  /* width: 100%; */
+  display: flex;
+  flex-direction:row;
+
+  margin-left:1em;
+  margin-right:1em;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size:21px;
+  color: #ffffff;
+
+  /* justify-content: start; */
+  /* align-items: start; */
+  margin-bottom:1em;
+  box-sizing: border-box;
+`;
+
+export const InputProcura = styled.View`
+  width: 100%;
+  align-items: center;
+`;
+
+export const InputCampoProcura = styled.View`
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-bottom-color: #fff;
+  width: 90%;
+  height: 42px;
+  border-radius: 5px;
+  padding: 3px;
+`;
+
+//--
+export const BaseTarefas = styled.View`
+  margin-top: 20px;
+  width: 100%;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+`;
+
+export const CaixaTask = styled.TouchableOpacity`
+  width: 100px;
+  height: 105px;
+  border-radius: 12px;
+  background-color: #d6dcd7;
+  padding: 2px;
+`;
+
+export const TarefasAbertas = styled.Text`
+  text-align: left;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2px;
+`;
+
+export const TarefasNumber = styled.Text`
+  text-align: left;
+  color: black;
+  font-size: 16px;
+`;
+
+export const BaseEmoji = styled.View`
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CircularButton = styled.TouchableOpacity`
+
+  /* bottom: 20px;
+  right: 20px; */
+  position:fixed;
+  margin-top:90%;
+  margin-left:75%;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #000;  
+  justify-content: center;
+  align-items: center;
+`;
+
+export const DivFooterTwo = styled.View`
+  position: absolute;
+  bottom: 0;
+  padding: 14px 24px;
+  background-color: #ececec;
+  border: 1px solid red;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  height: 300px;
+`;
+
+// Welcome
+
+// CreateTask
+
+// 
