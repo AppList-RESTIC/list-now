@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# ListNow
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+ListNow é um aplicativo de gerenciamento de tarefas desenvolvido em React Native utilizando Expo. Ele permite que os usuários criem, visualizem, editem e excluam tarefas de forma fácil e eficiente, além de categorizar tarefas e adicionar notificações.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+- **Adicionar Tarefas**: Crie novas tarefas com nome, data, detalhes e categoria.
+- **Visualizar Tarefas**: Filtre as tarefas por status (em aberto, concluídas ou todas).
+- **Excluir Tarefas**: Remova tarefas da lista com um simples toque.
+- **Persistência de Dados**: As tarefas são salvas localmente utilizando AsyncStorage, permitindo que permaneçam disponíveis mesmo após o fechamento do aplicativo.
 
-   ```bash
-   npm install
-   ```
+## Pré-requisitos
 
-2. Start the app
+Antes de executar o aplicativo, certifique-se de ter o seguinte instalado:
 
-   ```bash
-    npx expo start
-   ```
+- [Node.js](https://nodejs.org/) (v14 ou superior)
 
-In the output, you'll find options to open the app in a
+## Instalação
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. **Clone o repositório**:
+  ````
+   git clone https://github.com/seuusuario/ListNow.git
+````
+2.Navegue até o diretório do projeto:
+ ````
+   cd ListNow
+ ````
+3.Instale as dependências:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Após clonar o repositório, abra um terminal na pasta do projeto e digite:
+ ````
+npm install
+ ````
+Isso instalará todas as bibliotecas necessárias para o funcionamento do aplicativo, conforme definido no arquivo package.json.
 
-## Get a fresh project
+4. Inicie o servidor de desenvolvimento:
+````
+ npm start
+````
+Isso abrirá o terminal do Expo, onde você poderá ver opções para executar o aplicativo em um emulador ou em um dispositivo móvel
 
-When you're ready, run:
+## Tecnologias Usadas
 
-```bash
-npm run reset-project
-```
+- **React Native**: Biblioteca para desenvolvimento de interfaces móveis.
+- **Expo**: Plataforma para simplificar o desenvolvimento e build de aplicativos React Native.
+- **JavaScript**: Linguagem utilizada para o desenvolvimento.
+- **TypeScript**: Linguagem utilizada para o desenvolvimento.
+- **AsyncStorage**: Armazenamento local de dados persistentes no aplicativo.
+- **Node.js**: Ambiente de execução para desenvolvimento backend e gerenciamento de pacotes.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## Inegrantes no desenvolvimento
+ -Caio Costa
+ -André Chagas
+ -Eduardo Sousa
+ -Felipe Ribeiro
+ -Carlos Alexandre
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
